@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Courier New', monospace;
+}
+
+#editor-container {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #252526;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar h2 {
+    margin-top: 0;
+}
+
+#file-list {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+#file-list li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#file-list li:hover {
+    background-color: #37373d;
+}
+
+#save-button {
+    background-color: #0e639c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#save-button:hover {
+    background-color: #1177bb;
+}
+
+#editor {
+    flex-grow: 1;
+    display: flex;
+    background-color: #1e1e1e;
+}
+
+#line-numbers {
+    width: 40px;
+    padding: 10px 5px;
+    text-align: right;
+    color: #858585;
+    background-color: #1e1e1e;
+    user-select: none;
+}
+
+#code-area {
+    flex-grow: 1;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border: none;
+    resize: none;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#code-area:focus {
+    outline: none;
+}
